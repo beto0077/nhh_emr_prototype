@@ -1,0 +1,38 @@
+/*.color_navber {
+    color: #5162dd;
+}
+
+.light-green darken-1{
+    color:#7cb342 ;
+}
+
+.navbar {
+    width: 100%;
+    padding: 10px;
+    position: fixed;
+    top: 0;
+    transition: top 0.6s;
+  }
+  
+  .navbar--hidden {
+    top: -50px;
+  }*/
+
+.navbar {
+    position: fixed; /* Fix the position of the Navbar */
+    top: 0; /* Position it at the top of the viewport */
+    width: 100%; /* Make sure it spans the full width */
+    z-index: 1000; /* Set a high z-index to ensure it's above other elements */
+    background-color: #28a745; /* Adjust the background color as needed */
+  }
+  
+  .navbar--hidden {
+    transform: translateY(-100%); /* Move the Navbar off-screen when hidden */
+    transition: transform 0.3s ease-in-out; /* Add a smooth transition effect */
+  }
+  
+  /* Optional: Adjust padding/margin on the content below the Navbar */
+  /* You may need to fine-tune these values based on your design */
+  .content {
+    padding-top: 70px; /* Adjust as needed to prevent content overlap */
+  }
