@@ -84,5 +84,11 @@ router.get('/users/:id', getUser)
 router.post('/users', createUser)
 router.put('/users/:id', updateUser)
 router.delete('/users/:id', deleteUser)
+router.get("/ping", async (req, res) => {
+    /*const [rows] = await pool.query("SELECT 1 + 1 as result");
+    console.log(rows[0]);
+    res.json(rows[0]);*/
+    res.send({message: 'Hello Dark World!'});
+});
 
 export default router;
