@@ -7,7 +7,7 @@ dotenv.config();
 export const db = createPool({
   host: '127.0.0.1',
   port: 3306,
-  user: 'root',
+  user: 'renderuser',
   password: process.env.PSWD,
   database: 'hmsdb'
 });
