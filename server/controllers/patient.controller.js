@@ -14,7 +14,8 @@ export const getPatients = async (req, res) => {
         const [result] = await db.query("SELECT * FROM patient ORDER BY patient_id ASC");
         res.json(result);
     } catch (error) {
-        res.status(500).json({ message: error.message });
+        //res.status(500).json({ message: error.message });
+        res.status(500).json({ message: error });
     }
 };
 
