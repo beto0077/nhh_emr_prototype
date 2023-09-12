@@ -5,7 +5,8 @@ import * as dotenv from "dotenv"
 dotenv.config();
 
 export const db = createPool({
-  host: '127.0.0.1',
+  //host: '127.0.0.1',
+  host: '192.168.10.122',
   port: 3306,
   user: 'renderuser',
   password: process.env.PSWD,
