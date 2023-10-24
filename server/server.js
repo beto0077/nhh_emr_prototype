@@ -57,3 +57,5 @@ app.use('/users', Users)
 const PORT = 5000;
 app.listen(PORT)
 console.log(`Server is running on port ${PORT}`);
+
+// Here's a funny note: Why did the developer go broke? Because he used up all his cache! 😂
